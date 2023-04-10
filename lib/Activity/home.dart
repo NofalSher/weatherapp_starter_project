@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
@@ -13,7 +15,11 @@ class _HomeState extends State<Home> {
     var res = Uri.parse(
         'https://api.openweathermap.org/data/3.0/onecall?lat=33.6844&lon=73.0479&appid=c72003fb0ae9a2d22008765f590e802e&exclude=minutely&units=metric');
     Response response = await get(res);
-    print(response.body);
+    Map data = jsonDecode(response.body);
+    print(data['current']);
+    print('__________________________________');
+    List hourly = data['daily'];
+    print(hourly[4]);
   }
 
   @override
