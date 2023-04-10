@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:weatherapp_starter_project/Activity/home.dart';
+import 'package:http/http.dart' as http;
+
+import 'package:weatherapp_starter_project/Activity/loading.dart';
+import 'package:weatherapp_starter_project/Activity/location.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp();
-  }
+  runApp(MaterialApp(
+    routes: {
+      "/": (context) => Home(),
+      "/home": (context) => Home(),
+    },
+  ));
 }
