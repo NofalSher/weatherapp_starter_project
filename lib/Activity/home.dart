@@ -13,13 +13,13 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   void getData() async {
     var res = Uri.parse(
-        'https://api.openweathermap.org/data/3.0/onecall?lat=33.6844&lon=73.0479&appid=c72003fb0ae9a2d22008765f590e802e&exclude=minutely&units=metric');
-    Response response = await get(res);
+        'https://api.openweathermap.org/data/2.5/weather?q=islamabad&appid=c72003fb0ae9a2d22008765f590e802e');
+    var response = await get(res);
     Map data = jsonDecode(response.body);
     print(data['current']);
-    print('__________________________________');
+    print('___________________________________________ ');
     List hourly = data['daily'];
-    print(hourly[4]);
+    print(hourly[4]['temp']);
   }
 
   @override
