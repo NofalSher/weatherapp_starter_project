@@ -7,6 +7,7 @@ import 'package:weatherapp_starter_project/Activity/location.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     routes: {
       "/": (context) => Home(),
       "/home": (context) => Home(),
