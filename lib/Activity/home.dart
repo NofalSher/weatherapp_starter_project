@@ -11,22 +11,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  void getData() async {
-    var res = Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?q=islamabad&appid=c72003fb0ae9a2d22008765f590e802e');
-    var response = await get(res);
-    Map data = jsonDecode(response.body);
-    print(data['current']);
-    print('___________________________________________ ');
-    List hourly = data['daily'];
-    print(hourly[4]['temp']);
-  }
-
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    getData();
   }
 
   @override
@@ -43,6 +31,7 @@ class _HomeState extends State<Home> {
                   'assets/weather/11d.png',
                 ),
               ),
+              Text('hello world')
             ],
           ),
         ),
