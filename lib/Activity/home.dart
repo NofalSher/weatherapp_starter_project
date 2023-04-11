@@ -19,6 +19,9 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    Object? info = ModalRoute.of(context)!.settings.arguments;
+    // ignore: unused_local_variable
+
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 32, 25, 49),
       body: Center(
@@ -27,11 +30,24 @@ class _HomeState extends State<Home> {
           child: Column(
             children: [
               Container(
-                child: Image.asset(
-                  'assets/weather/11d.png',
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                  begin: Alignment.center,
+                  end: Alignment.centerRight,
+                  colors: [
+                    Color.fromARGB(255, 243, 166, 33),
+                    Color.fromARGB(255, 32, 25, 49),
+                  ],
+                )),
+                child: const CircleAvatar(
+                  backgroundColor: Colors.transparent,
+                  radius: 65,
+                  foregroundImage: AssetImage(
+                    'assets/weather/11d.png',
+                  ),
                 ),
               ),
-              Text('hello world')
+              Text(info.toString()),
             ],
           ),
         ),
