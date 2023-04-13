@@ -22,6 +22,7 @@ class worker {
           'https://api.openweathermap.org/data/2.5/weather?q=$location&appid=c72003fb0ae9a2d22008765f590e802e');
       var response = await get(res);
       Map data = jsonDecode(response.body);
+      print(data);
 
       List get_weather_data = data['weather'];
       Map get_weather_main_data = get_weather_data[0];
@@ -37,13 +38,13 @@ class worker {
 
       double get_humidity = get_temp_data['humidity'];
 
-      temp = get_temp.toString();
-      humidity = get_humidity.toString();
-      air_speed = get_air_speed.toString();
+      temp = get_temp.toStringAsFixed(2);
+      humidity = get_humidity.toStringAsFixed(2);
+      air_speed = get_air_speed.toStringAsFixed(2);
       description = get_desc;
       main = get_main_desc;
     } catch (e) {
-      temp = 'You got Error';
+      temp = 'Data is not loaded';
       humidity = 'Data is not loaded';
       air_speed = 'Data is not loaded';
       description = 'Data is not loaded';

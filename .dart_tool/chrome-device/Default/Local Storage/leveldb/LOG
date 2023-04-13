@@ -1,3 +1,12 @@
-2023/04/12-12:03:12.019 1438 Reusing MANIFEST C:\Users\Nofal\AppData\Local\Temp\flutter_tools.987b0ba6\flutter_tools_chrome_device.26f82d1e\Default\Local Storage\leveldb/MANIFEST-000001
-2023/04/12-12:03:12.021 1438 Recovering log #3
-2023/04/12-12:03:12.023 1438 Reusing old log C:\Users\Nofal\AppData\Local\Temp\flutter_tools.987b0ba6\flutter_tools_chrome_device.26f82d1e\Default\Local Storage\leveldb/000003.log 
+2023/04/13-20:59:34.048 314c Reusing MANIFEST C:\Users\Nofal\AppData\Local\Temp\flutter_tools.8270e2bf\flutter_tools_chrome_device.57737ad9\Default\Local Storage\leveldb/MANIFEST-000001
+2023/04/13-20:59:34.052 314c Recovering log #26
+2023/04/13-20:59:34.054 314c Reusing old log C:\Users\Nofal\AppData\Local\Temp\flutter_tools.8270e2bf\flutter_tools_chrome_device.57737ad9\Default\Local Storage\leveldb/000026.log 
+2023/04/13-20:59:34.055 314c Delete type=0 #3
+2023/04/13-20:59:34.055 314c Delete type=0 #4
+2023/04/13-20:59:34.055 314c Delete type=0 #7
+2023/04/13-20:59:34.055 314c Delete type=2 #8
+2023/04/13-20:59:34.056 314c Delete type=2 #10
+2023/04/13-20:59:34.056 314c Delete type=0 #12
+2023/04/13-20:59:34.056 314c Delete type=2 #13
+2023/04/13-20:59:34.056 314c Delete type=0 #14
+2023/04/13-20:59:34.058 314c Delete type=2 #15

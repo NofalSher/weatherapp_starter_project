@@ -1,3 +1,40 @@
-2023/04/12-05:48:09.609 3b0c Reusing MANIFEST C:\Users\Nofal\AppData\Local\Temp\flutter_tools.ebdac192\flutter_tools_chrome_device.5ec6b7c\Default\Local Storage\leveldb/MANIFEST-000001
-2023/04/12-05:48:09.611 3b0c Recovering log #3
-2023/04/12-05:48:09.613 3b0c Reusing old log C:\Users\Nofal\AppData\Local\Temp\flutter_tools.ebdac192\flutter_tools_chrome_device.5ec6b7c\Default\Local Storage\leveldb/000003.log 
+2023/04/13-16:45:54.469 3144 Reusing MANIFEST C:\Users\Nofal\AppData\Local\Temp\flutter_tools.1524c322\flutter_tools_chrome_device.24b0c579\Default\Local Storage\leveldb/MANIFEST-000001
+2023/04/13-16:45:54.472 3144 Recovering log #14
+2023/04/13-16:45:54.483 3144 Reusing old log C:\Users\Nofal\AppData\Local\Temp\flutter_tools.1524c322\flutter_tools_chrome_device.24b0c579\Default\Local Storage\leveldb/000014.log 
+2023/04/13-16:45:54.487 3144 Delete type=0 #3
+2023/04/13-16:45:54.487 3144 Delete type=0 #4
+2023/04/13-16:45:54.487 3144 Delete type=0 #7
+2023/04/13-16:45:54.487 3144 Delete type=0 #12
+2023/04/13-17:35:38.853 ed8 Level-0 table #18: started
+2023/04/13-17:35:38.872 ed8 Level-0 table #18: 94128 bytes OK
+2023/04/13-17:35:38.886 ed8 Delete type=0 #14
+2023/04/13-17:35:38.889 ed8 Compacting 4@0 + 1@1 files
+2023/04/13-17:35:38.907 ed8 Generated table #19@0: 85 keys, 56803 bytes
+2023/04/13-17:35:38.907 ed8 Compacted 4@0 + 1@1 files => 56803 bytes
+2023/04/13-17:35:38.919 ed8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/04/13-17:35:38.920 ed8 Delete type=2 #8
+2023/04/13-17:35:38.921 ed8 Delete type=2 #10
+2023/04/13-17:35:38.921 ed8 Delete type=2 #13
+2023/04/13-17:35:38.921 ed8 Delete type=2 #15
+2023/04/13-17:35:38.921 ed8 Delete type=2 #18
+2023/04/13-17:36:09.394 ed8 Level-0 table #21: started
+2023/04/13-17:36:09.421 ed8 Level-0 table #21: 223352 bytes OK
+2023/04/13-17:36:09.435 ed8 Delete type=0 #17
+2023/04/13-17:41:49.554 222c Level-0 table #23: started
+2023/04/13-17:41:49.569 222c Level-0 table #23: 69981 bytes OK
+2023/04/13-17:41:49.586 222c Delete type=0 #20
+2023/04/13-17:42:05.653 222c Level-0 table #25: started
+2023/04/13-17:42:05.673 222c Level-0 table #25: 78399 bytes OK
+2023/04/13-17:42:05.688 222c Delete type=0 #22
+2023/04/13-17:43:08.233 222c Level-0 table #27: started
+2023/04/13-17:43:08.248 222c Level-0 table #27: 45435 bytes OK
+2023/04/13-17:43:08.263 222c Delete type=0 #24
+2023/04/13-17:43:08.264 222c Compacting 4@0 + 1@1 files
+2023/04/13-17:43:08.296 222c Generated table #28@0: 219 keys, 361955 bytes
+2023/04/13-17:43:08.296 222c Compacted 4@0 + 1@1 files => 361955 bytes
+2023/04/13-17:43:08.309 222c compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/04/13-17:43:08.310 222c Delete type=2 #19
+2023/04/13-17:43:08.310 222c Delete type=2 #21
+2023/04/13-17:43:08.311 222c Delete type=2 #23
+2023/04/13-17:43:08.311 222c Delete type=2 #25
+2023/04/13-17:43:08.311 222c Delete type=2 #27

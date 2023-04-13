@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:weatherapp_starter_project/Activity/location.dart';
 import 'package:weatherapp_starter_project/api/api_calling.dart';
 import 'dart:convert';
+import 'package:weatherapp_starter_project/Activity/getting_started.dart';
 
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -23,7 +23,7 @@ class _LoadingState extends State<Loading> {
   String? main;
 
   void startApp() async {
-    worker instance = worker(location: 'Lahore');
+    worker instance = worker(location: 'Sydney');
     await instance.getData();
     temp = instance.temp;
     humidity = instance.humidity;
@@ -49,40 +49,46 @@ class _LoadingState extends State<Loading> {
   }
 
   Widget build(BuildContext context) {
+    double Screen_Width = MediaQuery.of(context).size.width;
+    double Screen_Height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 95, 74, 145),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.only(top: 200),
+          padding: EdgeInsets.only(
+              top: Screen_Height * .2, bottom: Screen_Height * .05),
           child: Column(
             children: [
-              CircleAvatar(
-                backgroundColor: Colors.transparent,
-                radius: 65,
-                foregroundImage: AssetImage(
-                  'assets/weather/11d.png',
+              // ),
+              Container(
+                height: Screen_Height * .3,
+                width: Screen_Width * .5,
+                child: Image.asset(
+                  'assets/image/getting_Started_Page_image.png',
+                  fit: BoxFit.contain,
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: Screen_Height * .05,
               ),
               Text(
                 ' Loading....\nWeather Data',
-                style: TextStyle(fontSize: 30, color: Colors.amber),
+                style: TextStyle(
+                    fontSize: Screen_Height * .04, color: Colors.amber),
               ),
               SizedBox(
-                height: 20,
+                height: Screen_Height * .05,
               ),
               Text(
                 'Made by Nofal',
                 style: TextStyle(color: Colors.amber),
               ),
               SizedBox(
-                height: 20,
+                height: Screen_Height * .05,
               ),
               SpinKitWave(
                 color: Colors.white,
-                size: 50,
+                size: Screen_Height * .07,
               ),
             ],
           ),
